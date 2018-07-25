@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @Component
-//推荐service
+
 public class RecommendService {
     @Autowired
     private UserMapper userMapper;
