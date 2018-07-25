@@ -79,7 +79,7 @@ public class RecommendService {
     public List<User> recommendUser(int uid)throws UnsupportedEncodingException {
         String userHobby=userMapper.selectByPrimaryKey(uid).getUserhobby();//查询用户hobby
         String[] userHobbies=userHobby.split(",");//用户hobby列表
-        List<User> recommendUser=new ArrayList<User>();//中间推荐用户列表
+        List<User> recommendUser=new ArrayList<User>();
 
 
         //查询hobby相近的用户
